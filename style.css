@@ -1,0 +1,51 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .slider {
+    width: 100vw;
+    height: 450px;
+    position: absolute;
+    overflow: hidden;
+    border: red solid 1px;
+  }
+  
+  .innerSlider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(18, 0.5fr);
+    gap: 20px;
+    pointer-events: none;
+  }
+  .slide {
+    display: block;
+  }
+  .slide > .img {
+    background-image: url(http://pmdv.de/wp-content/uploads/Peter_1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    width: 150px;
+    padding: 3rem;
+  }
+  
+  .img-legend {
+    height: 100px;
+    background: white;
+    text-align: center;
+  }
+  .img-legend > h4 {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  
